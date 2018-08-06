@@ -10,7 +10,7 @@ public class PictureMapping {
     private String text ;
 
     @Id
-    @GeneratedValue(strategy= GenerationType.SEQUENCE)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     public int getId() {
         return id;
     }
@@ -29,7 +29,7 @@ public class PictureMapping {
         this.text = text;
     }
 
-    @Column(name="TEXT")
+    @Column(name="PICTURE_URL")
     public String getPictureURL() {
         return pictureURL;
     }
